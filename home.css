@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lusitana:wght@400;700&display=swap'); */
+
+*{
+    margin: 0;
+    font-family: 'Lusitana', serif;
+    /* font-family: 'Inter', sans-serif; */
+    background-color: #FAFAFA;
+    font-weight: 400;
+}
+/* background-color: #dce1de; */
+
+/* HEADER */
+header {
+    box-sizing: border-box;
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    overflow: hidden;
+    gap: 10px;
+    border-radius: 0px;
+    font-weight: 700;
+}
+
+.left {
+    align-self: flex-start;
+}
+
+.right {
+    align-self: flex-end;
+}
+
+/* WELCOME SECTION */
+.welcome{
+    box-sizing: border-box;
+    width: 100%;
+    height: min-content;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    overflow: hidden;
+    gap: 10px;
+    border-radius: 0px;
+    font-size: 100px;
+}
+
+/* ABOUT ME SECTION */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    max-width: 50%; 
+    padding: 40px;
+}
+
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name h1, .name h2, .name span {
+    margin: 0;
+}
+
+.name h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.name h2 {
+    font-size: 20px;
+    color: #666;
+}
+
+.name span {
+    font-size: 16px;
+    color: #999;
+}
+
+.description p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.description{
+    width: 100%;
+}
