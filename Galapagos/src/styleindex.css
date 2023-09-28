@@ -1,0 +1,199 @@
+
+
+/* INDEX */
+
+/* Styling for the main header image */
+.main-head-image {
+  position: relative;  /* Allows positioning of pseudo elements */
+  width: 100%;  /* Full width of the parent element */
+  height: 900px;  /* Fixed height */
+  background-image: url("../gallery/green-sea-turtle-isabela-island-galapagos_16x9.webp");  /* Image source */
+  background-size: cover;  /* Ensures image covers entire element */
+  background-position: center;  /* Centers the background image */
+  display: flex;  /* Makes it a flex container */
+  align-items: center;  /* Centers content vertically in the container */
+  justify-content: center;  /* Centers content horizontally in the container */
+}
+
+/* Styling for the overlay on the main header image */
+.main-head-image::after {
+  content: "";  /* Required for pseudo elements */
+  position: absolute;  /* Positions pseudo element relative to the parent */
+  top: 0; left: 0;  /* Positions the pseudo element at the top-left corner */
+  width: 100%; height: 100%;  /* Full width and height of the parent element */
+  background: rgba(0, 0, 0, 0.5);  /* Semi-transparent black background */
+}
+
+/* Styling for the content inside the main header image */
+.img-header-content {
+  position: relative;  /* Positions it relative to the parent */
+  z-index: 1;  /* Ensures it is displayed above the background image */
+  color: white;  /* Text color */
+  text-align: center;  /* Centers the text */
+  font-family: Arial, sans-serif;  /* Font family */
+  padding: 20px;  /* Padding around the text */
+  font-size: 1.5em;  /* Font size */
+}
+
+/* Styling for the carousel container */
+.container {
+  padding: 2rem;  /* Padding around the carousel */
+  background-color: #222;  /* Background color of the carousel container */
+}
+
+/* Styling for the carousel */
+.carousel {
+  position: relative;  /* Allows positioning of child elements */
+  max-width: 100rem;  /* Maximum width of the carousel */
+  margin: 0 auto;  /* Centers the carousel horizontally */
+}
+
+/* Styling for the slider inside the carousel */
+.slider {
+  display: flex;  /* Makes it a flex container */
+  aspect-ratio: 16 / 9;  /* Sets the aspect ratio of the slider */
+  overflow-x: auto;  /* Allows horizontal scrolling */
+  scroll-snap-type: x mandatory;  /* Enables scroll snapping along the x-axis */
+  scroll-behavior: smooth;  /* Smooth scrolling */
+  border-radius: 0.5rem;  /* Rounded corners */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+  display: none;  /* Removes the scrollbar */
+}
+
+/* Styling for each image inside the slider */
+.slider img {
+  flex: 1 0 100%;  /* Makes each image take up 100% of the slider width */
+  scroll-snap-align: start;  /* Snaps the start edge of the image to the start edge of the slider on scroll */
+  object-fit: cover;  /* Ensures the image covers the entire container while maintaining its aspect ratio */
+  z-index: 1;  /* Ensures the image is displayed above the background */
+}
+
+/* Styling for the carousel navigation */
+.slider-nav {
+  display: flex;  /* Makes it a flex container */
+  column-gap: 1rem;  /* Space between navigation buttons */
+  position: absolute;  /* Positions it relative to the carousel */
+  bottom: 1.25rem;  /* Positions it towards the bottom of the carousel */
+  left: 50%;  /* Centers it horizontally */
+  transform: translateX(-50%);  /* Corrects the positioning so that it is perfectly centered */
+  z-index: 2;  /* Ensures it is displayed above the images */
+}
+
+/* Styling for each navigation button inside the carousel navigation */
+.slider-nav a {
+  width: 0.5rem; height: 0.5rem;  /* Fixed size for the buttons */
+  border-radius: 50%;  /* Makes the buttons circular */
+  background-color: #fff;  /* Button color */
+  opacity: 0.75;  /* Makes the buttons semi-transparent */
+  transition: opacity ease 250ms;  /* Smooth transition effect on hover */
+}
+
+/* Hover state for the navigation buttons */
+.slider-nav a:hover {
+  opacity: 1;  /* Makes the button fully opaque on hover */
+}
+
+/* The .ecuador-div class styles a section with a background color of #4C6B88. 
+It uses flexbox to layout its contents, aligning its children in a row and stretching them to fill the container's height. */
+.ecuador-div {
+  background-color: #4C6B88;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 800px;
+}
+
+/* The .ecuador-div img class styles the images inside the Ecuador section. 
+It makes the image take up 70% of the container, scales the image to fit its container, 
+and maintains the aspect ratio of the image while filling the container's height. */
+.ecuador-div img {
+  flex: 0 0 70%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* The .ecuador-div ul class styles the unordered list inside the Ecuador section. 
+It uses flexbox to layout its items in a column, centers its items, and applies padding and font styles. */
+.ecuador-div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* The .ecuador-div ul li class styles each list item inside the Ecuador section list. 
+It adds bottom margin for separation between list items, justifies the text, and applies padding. */
+.ecuador-div ul li {
+  margin-bottom: 10px;
+  text-align: justify;
+  padding: 10px;
+  list-style-type: none;
+}
+
+/* The .what-is-div class styles the "What is Galapagos" section with a black background color. 
+It uses flexbox to center its contents both horizontally and vertically, and applies padding and height. */
+.what-is-div {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  height: 550px;
+}
+
+/* The .what-is-div h1 class styles the header inside the "What is Galapagos" section. */
+.what-is-div h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* The .what-is-div p class styles the paragraph inside the "What is Galapagos" section. */
+.what-is-div p {
+  text-align: center;
+  line-height: 1.5;
+  width: 60%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* The media query applies styles when the viewport's width is 768px or less. 
+It adjusts the flex direction, padding, height, font size, and width of elements to accommodate smaller screens. */
+@media (max-width: 768px) {
+  .ecuador-div {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .ecuador-div img, .ecuador-div ul {
+    flex: 1 0 100%;
+  }
+
+  .ecuador-div ul {
+    padding: 30px;
+  }
+
+  .ecuador-div ul li {
+    font-size: 0.9em;
+  }
+
+  .what-is-div {
+    padding: 50px;
+    height: auto;
+  }
+
+  .what-is-div h1 {
+    font-size: 2em;
+  }
+
+  .what-is-div p {
+    width: 100%;
+  }
+}

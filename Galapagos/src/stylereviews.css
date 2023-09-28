@@ -1,0 +1,257 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* Global styles */
+
+/* Zero out margins and padding, set the default font, and apply box-sizing to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Remove underlines from all links */
+a {
+    text-decoration: none;
+}
+
+/* Testimonials section */
+
+/* Selects the element with the id 'testimonials' */
+#testimonials {
+    /* Uses flexbox to layout the child elements of #testimonials */
+    display: flex;
+    /* Centers child elements on the main axis (horizontally by default) */
+    justify-content: center;
+    /* Centers child elements on the cross axis (vertically by default) */
+    align-items: center;
+    /* Changes the direction of the main axis to vertical */
+    flex-direction: column;
+    /* Sets the width of #testimonials to span the full width of its parent element */
+    width: 100%;
+}
+
+/* Selects elements with the class 'testimonial-heading' */
+.testimonial-heading {
+    /* Increases the spacing between characters */
+    letter-spacing: 1px;
+    /* Adds 30px of space above and below the element, and 0 on the left and right */
+    margin: 30px 0;
+    /* Adds 10px of space on the top and bottom of the element, and 20px on the left and right */
+    padding: 10px 20px;
+    /* Uses flexbox to layout the child elements of .testimonial-heading */
+    display: flex;
+    /* Changes the direction of the main axis to vertical */
+    flex-direction: column;
+    /* Centers child elements on the main axis */
+    justify-content: center;
+    /* Centers child elements on the cross axis */
+    align-items: center;
+}
+
+/* Selects h1 elements that are descendants of .testimonial-heading */
+.testimonial-heading h1 {
+    /* Sets the font size to 2.2rem */
+    font-size: 2.2rem;
+    /* Sets the font weight to 500 (medium) */
+    font-weight: 500;
+    /* Sets the background color of the h1 element to #202020 (a dark gray) */
+    background-color: #202020;
+    /* Sets the text color to #ffffff (white) */
+    color: #ffffff;
+    /* Adds 10px of space on the top and bottom of the h1, and 20px on the left and right */
+    padding: 10px 20px;
+}
+
+/* Selects span elements that are descendants of .testimonial-heading */
+.testimonial-heading span {
+    /* Sets the font size to 1.3rem */
+    font-size: 1.3rem;
+    /* Sets the text color to #252525 (a dark gray) */
+    color: #252525;
+    /* Adds 10px of space below the span element */
+    margin-bottom: 10px;
+    /* Increases the spacing between characters */
+    letter-spacing: 2px;
+    /* Converts the text to uppercase letters */
+    text-transform: uppercase;
+}
+
+/* Selects elements with the class 'testimonial-box-container' */
+.testimonial-box-container {
+    /* Uses flexbox to layout the child elements of .testimonial-box-container */
+    display: flex;
+    /* Centers child elements on the main axis */
+    justify-content: center;
+    /* Stretches child elements to fill the cross axis */
+    align-items: stretch;
+    /* Allows child elements to wrap onto new lines if there's not enough space */
+    flex-wrap: wrap;
+    /* Sets the width of .testimonial-box-container to span the full width of its parent element */
+    width: 100%;
+}
+
+/* Selects elements with the class 'testimonial-box' */
+.testimonial-box {
+    /* Sets the width of the testimonial box to 500px */
+    width: 500px;
+    /* Adds a box shadow that's offset 2px to the right and down, with a blur radius of 30px, and a color of black with 10% opacity */
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    /* Sets the background color of the testimonial box to white */
+    background-color: #ffffff;
+    /* Adds 20px of space inside the testimonial box */
+    padding: 20px;
+    /* Adds 15px of space outside the testimonial box */
+    margin: 15px;
+    /* Changes the cursor to a pointer when hovering over the testimonial box */
+    cursor: pointer;
+    /* Rounds the corners of the testimonial box */
+    border-radius: 20px;
+}
+
+.profile-image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong{
+    color:#3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.name-user span{
+    color:#979797;
+    font-size: 0.88rem;
+}
+
+.reviews{
+    color: rgb(0, 0, 0);
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comments p{
+    font-size: 0.9rem;
+    color: #4b4b4b;
+}
+
+.testimonial-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+/* Give review section */
+/* Selects elements with the class 'give-review' */
+.give-review {
+    /* Uses flexbox to layout the child elements of .give-review */
+    display: flex;
+    /* Centers child elements on the main axis (horizontally by default) */
+    justify-content: center;
+    /* Centers child elements on the cross axis (vertically by default) */
+    align-items: center;
+    /* Changes the direction of the main axis to vertical */
+    flex-direction: column;
+    /* Sets the width of .give-review to span the full width of its parent element */
+    width: 100%;
+    /* Adds 30px of space above and below the element, and 0 on the left and right */
+    margin: 30px 0;
+    /* Sets the text color to black */
+    color: black;
+}
+
+/* Selects label elements that are descendants of .give-review */
+.give-review label {
+    /* Makes the font weight of the labels bolder */
+    font-weight: bolder;
+}
+
+/* Selects text input and select input elements that are descendants of .give-review */
+.give-review input[type=text], select {
+    /* Sets the width of the input and select elements to span the full width of its parent element */
+    width: 100%;
+    /* Adds 12px of space on the top and bottom of the element, and 20px on the left and right */
+    padding: 12px 20px;
+    /* Adds 8px of space above and below the element, and 0 on the left and right */
+    margin: 8px 0;
+    /* Makes the input and select elements block-level, but also allows them to sit side-by-side like inline elements */
+    display: inline-block;
+    /* Adds a 1px border around the input and select elements, with a color of #ccc (a light gray) */
+    border: 1px solid #ccc;
+    /* Rounds the corners of the input and select elements */
+    border-radius: 4px;
+    /* Includes the padding and border in the element's total width and height */
+    box-sizing: border-box;
+}
+
+/* Selects submit input elements that are descendants of .give-review */
+.give-review input[type=submit] {
+    /* Sets the width of the submit input to span the full width of its parent element */
+    width: 100%;
+    /* Sets the background color of the submit input to #4CAF50 (a green) */
+    background-color: #4CAF50;
+    /* Sets the text color of the submit input to white */
+    color: white;
+    /* Adds 14px of space on the top and bottom of the submit input, and 20px on the left and right */
+    padding: 14px 20px;
+    /* Adds 8px of space above and below the submit input, and 0 on the left and right */
+    margin: 8px 0;
+    /* Removes the default border from the submit input */
+    border: none;
+    /* Rounds the corners of the submit input */
+    border-radius: 4px;
+    /* Changes the cursor to a pointer when hovering over the submit input */
+    cursor: pointer;
+}
+
+/* Changes the background color of the submit input when it's being hovered over */
+.give-review input[type=submit]:hover {
+    /* Changes the background color to #45a049 (a darker green) */
+    background-color: #45a049;
+}
+
+/* Selects the element with the id 'comments' */
+#comments {
+    /* Sets the width of the #comments element to span the full width of its parent element */
+    width: 100%;
+    /* Adds 12px of space on the top and bottom of the #comments element, and 20px on the left and right */
+    padding: 12px 20px;
+    /* Adds 8px of space above and below the #comments element, and 0 on the left and right */
+    margin: 8px 0;
+    /* Makes the #comments element block-level, but also allows it to sit side-by-side like inline elements */
+    display: inline-block;
+    /* Adds a 1px border around the #comments element, with a color of #ccc (a light gray) */
+    border: 1px solid #ccc;
+    /* Rounds the corners of the #comments element */
+    border-radius: 4px;
+    /* Includes the padding and border in the #comments element's total width and height */
+    box-sizing: border-box;
+    /* Sets the height of the #comments element to 200px */
+    height: 200px;
+}

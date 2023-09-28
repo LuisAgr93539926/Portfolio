@@ -1,0 +1,193 @@
+/* History Section */
+
+/* Defines the container for the history section */
+.history {
+  background-color: #161617;
+  display: flex;
+  justify-content: space-between;
+  height: 800px;
+  align-items: stretch; /* Ensures the child elements stretch to fill the container */
+}
+
+/* Styles the image in the history section */
+.history img {
+  max-height: 85%;
+  object-fit: cover; /* Ensures the image covers the whole area of its parent */
+  padding-left: 40px;
+  align-self: flex-end; /* Aligns the image to the bottom of the container */
+}
+
+/* Styles the list in the history section */
+.history-content ul {
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5em;
+  font-family: 'Poppins', sans-serif;
+  width: 70%; 
+  max-width: 800px; 
+  margin: 0 auto; /* Centers the list horizontally within the container */
+}
+
+/* Styles the list items in the history section */
+.history-content ul li {
+  margin-bottom: 10px; /* Adds some space between list items */
+  width: 100%;
+  padding: 10px;
+  list-style-type: none; /* Removes the default list item bullet points */
+  text-align: right;
+}
+
+/* Styles the header in the history section */
+.history-content h2 {
+  padding-top: 50px;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: right;
+  width: 90%; 
+  margin-bottom: 30px;
+}
+
+/* Increases the separation between each list item */
+.history-content li {
+  margin-bottom: 20px; 
+}
+
+/* Location section */
+
+/* Defines the container for the location section */
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 1000px;
+  background-color: #161617;
+}
+
+/* Styles the header in the location section */
+.location h2 {
+  font-size: 48px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+/* Styles the iframe in the location section */
+.location iframe {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+/* Mobile styling */
+
+/* Styles for screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+
+/* Changes layout of the history section for smaller screens */
+.history {
+  flex-direction: column; /* Stacks the image and list vertically */
+  height: auto; /* Allows the height to adjust automatically */
+}
+
+/* Changes styles of the image in the history section for smaller screens */
+.history img {
+  max-height: 100%; /* Allows the image to take up the full height */
+  padding-left: 20px; /* Reduces left padding */
+  padding-top: 20px; /* Adds some top padding */
+}
+
+/* Changes styles of the list in the history section for smaller screens */
+.history-content ul {
+  font-size: 1.2em; /* Reduces font size */
+  width: 90%; /* Allows the text to take up more width */
+}
+
+/* Changes styles of the header in the history section for smaller screens */
+.history-content h2 {
+  font-size: 3em; /* Reduces font size */
+  padding-top: 20px; /* Reduces top padding */
+}
+
+/* Changes layout of the cards for smaller screens */
+.cards {
+  flex-direction: column; /* Stacks the cards vertically */
+  padding: 10px; /* Reduces padding */
+}
+}
+
+/* Cards section */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 20px;
+  background-color: #161617;
+}
+
+ 
+.card{
+  position: relative; /* Change from absolute to relative */
+  width: 250px; /* Set a specific size for your card */
+  height: 320px; /* Set a specific size for your card */
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  color: #000000;
+}
+
+#costs{
+  width: 400px; /* Set a specific size for your card */
+  height: 500px; /* Set a specific size for your card */
+}
+
+#tips{
+  width: 400px; /* Set a specific size for your card */
+  height: 500px; /* Set a specific size for your card */
+}
+
+#attractions{
+  width: 400px; /* Set a specific size for your card */
+  height: 500px; /* Set a specific size for your card */
+}
+
+
+.container{
+  display: flex; /* Allows child elements to lay out along a line */
+  flex-wrap: wrap; /* Allows the items to wrap onto multiple lines if they run out of space */
+  justify-content: center; /* Aligns items along the horizontal line in the center */
+  width: 100%; /* Take up as much width as possible */
+  gap: 20px; /* Space between each card */
+}
+
+
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #00653E;
+  color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bolder;
+  display: flex; /* Establishes a flex context for its direct children */
+  justify-content: center; /* Aligns children along the horizontal line in the center */
+  align-items: center; /* Aligns children along the vertical line in the center */
+}
+
+.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: #078253;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  padding: 25px;
+}

@@ -1,0 +1,123 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* HEADER (Navigation) */
+
+/* Set the background color and padding for the header */
+header {
+  background-color: #ffffff;
+  padding: 30px 0;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1); /* shadow */
+}
+
+/* Main body */
+
+/* Set the text color, margins, font, and flex properties for the body */
+body{
+  color: white;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  display: flex;   /* Enable flex layout on the body */
+  flex-direction: column;   /* Stack the children of body vertically */
+  min-height: 100vh;   /* Ensure the body takes up the full viewport height */
+}
+
+/* Navigation header */
+
+/* Add padding to the nav element */
+nav {
+  padding: 0 20px;
+}
+
+/* Remove bullets, margin and padding from the ul in nav and set its display to flex */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Set display properties for the .nav-group class */
+.nav-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Add right margin to the list items in .nav-group */
+.nav-group li {
+  margin-right: 20px;
+}
+
+/* Remove right margin from the last list item in .nav-group */
+.nav-group li:last-child {
+  margin-right: 0;
+}
+
+/* Style the anchor tags in nav */
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* Change the color of the anchor tags in .nav-group on hover */
+.nav-group a:hover {
+  color: #00653e;
+}
+
+/* Style the .join-button class */
+.join-button {
+  background-color: #00653e;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+/* Change the background color of the .join-button on hover */
+.join-button:hover {
+  background-color: #004b2d;
+}
+
+/* FOOTER */
+
+/* Style the footer */
+footer {
+  margin-top: auto;   /* Push the footer down to the bottom of the flex container */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 -2px 30px rgba(0, 0, 0, 0.3); /* shadow */
+}
+
+/* Add bottom margin to the h2 in footer */
+footer h2 {
+  margin-bottom: 20px;
+}
+
+/* Style the email input field in the footer form */
+footer form input[type="email"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* Style the submit input field in the footer form */
+footer form input[type="submit"]{
+  background-color: #00653e;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  border-radius: 30px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+/* Change the background color of the submit button in the footer form on hover */
+footer form input[type="submit"]:hover {
+  background-color: #004b2d;
+}
