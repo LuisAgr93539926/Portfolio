@@ -137,3 +137,7 @@ blockquote cite {
 .ref{
   margin-top: 60vmin;
 }
+
+span{
+  letter-spacing: 3px;
+}
