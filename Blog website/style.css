@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap");
+
+body {
+  font-family: "Lusitana", serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+  /* max-width: 800px; */
+  /* margin: 20px auto;
+    padding: 0 10px; */
+  word-wrap: break-word;
+  margin: 0;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-style: italic;
+  color: #333;
+}
+
+blockquote > footer {
+  font-style: normal;
+  border: 0;
+  color: rgb(104, 128, 135);
+}
+
+blockquote cite {
+  font-style: normal;
+}
