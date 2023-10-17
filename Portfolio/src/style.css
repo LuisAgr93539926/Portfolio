@@ -12,6 +12,7 @@ body{
     transition: background 1s ease;
     background-color: #FAFAFA;
     min-height: 100vh;
+    font-size: larger;
 }
 
 /* HEADER */
@@ -36,6 +37,10 @@ header {
 
 .right {
     align-self: flex-end;
+}
+
+.right a{
+    font-size: 1.2em ;
 }
 
 
@@ -89,3 +94,43 @@ a:hover:after {
 
 }
 
+/* WELCOME SECTION */
+.welcome {
+    box-sizing: border-box;
+    width: 100%;
+    height: min-content;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column; /* Added to stack the elements vertically */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+    overflow: hidden;
+    gap: 10px;
+    border-radius: 0px;
+    font-size: 100px;
+}
+
+.portfolio-text {
+    order: -1; /* Moves the text to the top */
+    margin-bottom: 30px; /* Adjust the margin bottom as needed */
+}
+
+.animated-image {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    margin-top: 20px; /* Adjust the margin top as needed */
+    animation: animateImage 2s infinite; /* Add animation */
+}
+
+@keyframes animateImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
