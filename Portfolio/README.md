@@ -19,7 +19,7 @@ During this project, I gained and improved several key skills:
 
 ## Installation
 
-To view this website online, click [here][https://luismarioagreda.github.io/Portfolio/src/home.html]
+To view this website online, click [here](https://luismarioagreda.github.io/Portfolio/src/home.html)
 
 To view the website locally, follow these steps:
 
