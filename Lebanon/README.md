@@ -25,6 +25,16 @@ Designed with user experience in mind, the site features a fully responsive desi
 - Prioritized **website performance** by optimizing assets and reducing HTTP requests by **40%**, leading to a **20%** improvement in load times. Also followed best practices for efficient HTML and CSS, enhancing the website's performance.
 - Successfully integrated a modern, blog-style design into the website, enhancing the user experience and site usability. The website scored **85%** in a usability test conducted among peers.
 
+## Installation
+
+To view this website in action, click [here](https://luismarioagreda.github.io/Lebanon/index.html)
+
+To view the website locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/luismarioagreda/luismarioagreda.github.io.git`
+2. Navigate to the repository: `cd luismarioagreda.github.io/Lebanon`
+3. Open `index.html` in your preferred browser.
+
 ## Conclusion
 
 This project allowed me to improve my skills in front-end development and user experience design. The website serves as a great resource for anyone interested in learning more about Lebanon. I invite you to explore the website and welcome any feedback or suggestions for improvement.
