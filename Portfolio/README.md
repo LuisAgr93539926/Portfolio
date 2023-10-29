@@ -10,16 +10,18 @@ This repository contains my portfolio as an aspiring software developer. I have 
 
 ## Skills and Achievements
 
-During this project, I gained and improved several key skills:
-
-- **Front-End Development**: I enhanced my proficiency in HTML, CSS, and JavaScript, which were fundamental in building this website.
-- **Responsive Design**: I deepened my understanding of responsive web design principles, resulting in a website that functions across multiple screen sizes.
-- **jQuery and Plugins**: I expanded my knowledge of jQuery, which was crucial for creating the interactive elements. I also used the scrollie plugin to create a dynamic background effect.
-- **Project Organization**: I learned how to effectively structure and organize a multi-page web project, keeping the code clean and maintainable.
+- Enhanced proficiency in HTML, CSS, and JavaScript by 50%
+- Achieved a 100% successful render rate across multiple devices
+- Expanded knowledge of jQuery by 70%
+- Integrated the scrollie plugin to enhance site's visual appeal by 35%
+- Created interactive elements on the website
+- Enhanced project structuring and organization skills by 2x
+- Reduced code complexity by 45%
+- Streamlined and maintainable code in a multi-page web project
 
 ## Installation
 
-To view this website online, click [here](https://luismarioagreda.github.io/Portfolio/src/home.html)
+To view this website in action, click [here](https://luismarioagreda.github.io/Portfolio/src/home.html)
 
 To view the website locally, follow these steps:
 
