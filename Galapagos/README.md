@@ -20,6 +20,16 @@ This website offers a visually appealing and informative guide for individuals i
 - **Increased Efficiency**: By using a `package.json` file for managing dependencies, I have streamlined my workflow, increasing productivity by 25%.
 - **Code Quality**: I have enhanced my code quality and readability by adhering to best coding practices, resulting in a 30% decrease in debugging time.
 
+## Installation
+
+To view this website in action, click [here](https://luismarioagreda.github.io/Galapagos/src/index.html)
+
+To view the website locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/luismarioagreda/luismarioagreda.github.io.git`
+2. Navigate to the repository: `cd luismarioagreda.github.io`
+3. Open `home.html` in your preferred browser.
+
 ## Conclusion
 
 This Galapagos Islands Travel Guide website is a testament to my growth as a web developer. With a focus on responsive design, interactive elements, and aesthetic appeal, I've created a website that is not only functional but also engaging. This project has allowed me to improve both my technical skills and efficiency, setting a solid foundation for future projects.
