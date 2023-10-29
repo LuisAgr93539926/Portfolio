@@ -1,7 +1,5 @@
 # Lebanon Website
 
-This is a modern, user-friendly, blog-styled website about Lebanon. The website features an award-winning carousel animation from [camillemormal.com](https://camillemormal.com/) and provides comprehensive information about Lebanon's culture, history, and unique charm.
-
 ## Summary
 
 The Lebanon website is a comprehensive digital platform created as a prototype for learning purposes, employing modern web technologies to deliver engaging and informative content about Lebanon. The site is built using HTML, CSS, and JavaScript, and it incorporates a carousel animation inspired by the award-winning designs found on [camillemormal.com](https://camillemormal.com/).
