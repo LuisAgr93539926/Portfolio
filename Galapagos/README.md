@@ -27,8 +27,8 @@ To view this website in action, click [here](https://luismarioagreda.github.io/G
 To view the website locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/luismarioagreda/luismarioagreda.github.io.git`
-2. Navigate to the repository: `cd luismarioagreda.github.io`
-3. Open `home.html` in your preferred browser.
+2. Navigate to the repository: `cd luismarioagreda.github.io/Galapagos/src/`
+3. Open `index.html` in your preferred browser.
 
 ## Conclusion
 
