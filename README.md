@@ -10,5 +10,5 @@ Feel free to explore each website by following the quick access links above. I h
 *link:* https://luismarioagreda.github.io/Galapagos/src/index.html
 
 ## Portfolio  
-*link:* https://luismarioagreda.github.io/Portfolio/src/home.html
+*link:* https://luismarioagreda.github.io/portfolio/src/home.html
 
