@@ -23,11 +23,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    padding: 100px; /* This is too large for mobile devices */
     overflow: hidden;
     gap: 10px;
     border-radius: 0px;
     font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px; /* Reduced padding for mobile devices */
+        flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    }
+
+    .left, .right {
+        flex: 1 1 100%; /* Make them take full width on smaller screens */
+        text-align: center; /* Center-align the text */
+    }
 }
 
 .left {
@@ -52,17 +64,30 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    padding: 100px; 
     overflow: hidden;
     gap: 10px;
     border-radius: 0px;
     margin-top: auto;
 }
+
 .follow {
     align-self: flex-end;
     display: flex;
     flex-direction: column;
     gap: 5px; 
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 20px; 
+        flex-wrap: wrap;
+    }
+
+    .follow {
+        align-self: center;
+        order: -1; /* Bring to the top if necessary */
+    }
 }
 
 
@@ -91,6 +116,30 @@ a::after{
 a:hover:after {
     color: #666;
     width:100%;
+
+}
+
+@media (max-width: 768px) {
+    /* Ensure links are easily clickable on touch devices */
+    a {
+        padding: 10px 5px; /* Increase padding to create a larger clickable area */
+      }
+      
+      a:hover::after,
+      a:focus::after {
+        width: 100%;
+      }
+      
+      /* Ensure fonts are legible */
+      body {
+        font-size: 16px; /* Set a base font size */
+      }
+      
+      /* Optional: Add a :focus state for links to provide visual feedback on touch devices */
+      a:focus {
+        outline: 2px solid #666;
+        outline-offset: 2px;
+      }
 
 }
 
@@ -132,5 +181,23 @@ a:hover:after {
     }
     100% {
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        padding: 20px; /* Reduced padding for mobile devices */
+        padding-top: 100px; /* Add top padding to maintain the same distance from the header */
+    }
+    
+    .portfolio-text {
+        font-size: 70px; 
+        margin-bottom: 5px;
+    }
+    
+    .animated-image {
+        width: 100px; /* Adjust the size as needed */
+        height: 100px;
+        margin-top: 10px; /* Adjust the margin top as needed */
     }
 }

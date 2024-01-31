@@ -9,6 +9,7 @@
   max-width: 100%;
   padding: 120px;
   flex-direction: row;
+  margin-bottom: 50px; /* Add bottom margin to push the footer down */
 }
 
 .photo {
@@ -57,4 +58,21 @@
 
 .description {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about,
+  .content {
+    flex-direction: column; /* Stack the photo and text vertically */
+    padding: 40px 20px; /* Reduced padding */
+  }
+
+  .photo {
+    width: 70%; /* Adjust photo width for smaller screens */
+  }
+
+  .text-content {
+    width: 100%; /* Full width for text content */
+  }
+
 }
